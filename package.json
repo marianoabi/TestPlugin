@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-testplugin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Cordova plugin that displays Hello World.",
   "cordova": {
     "id": "cordova-plugin-testplugin",
