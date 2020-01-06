@@ -15,10 +15,13 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
   
-    <js-module src="www/testplugin.js" name="testPlugin">
+    <!-- <js-module src="www/testplugin.js" name="testPlugin">
         <clobbers target="window.plugins.testPlugin" />
-    </js-module>
+    </js-module> -->
     <platform name="ios">
+        <js-module src="www/testplugin.js" name="testPlugin">
+            <clobbers target="cordova.echo" />
+        </js-module>
         <config-file target="config.xml" parent="/*">
             <feature name="Echo">
                 <param name="ios-package" value="Echo" />
